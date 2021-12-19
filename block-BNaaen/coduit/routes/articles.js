@@ -30,6 +30,7 @@ router.get("/:slug", async (req, res, next) => {
     }
   });
   
+  
   // get all articles
   router.get("/", async (req, res, next) => {
     if (req.query && req.query.tag) {
