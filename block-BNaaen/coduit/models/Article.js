@@ -10,7 +10,7 @@ var articleSchema = new Schema({
     favorited:[{ type: Schema.Types.ObjectId, ref: "User" }],
     favoritesCount:{type:Number,default:0},
     author:{ type: Schema.Types.ObjectId, ref: "User" },
-    comment:[{ type: Schema.Types.ObjectId, ref: "Article" }]
+    comment:[{ type: Schema.Types.ObjectId, ref: "Comment" }]
 },{timestamps:true})
 
 
