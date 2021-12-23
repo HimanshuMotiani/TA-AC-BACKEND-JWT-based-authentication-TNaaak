@@ -4,8 +4,8 @@ var bcrypt = require("bcrypt")
 var jwt = require("jsonwebtoken")
 
 var userSchema = new Schema({
-    username:String,
-    email:{type:String,required:true},
+    username:{type:String,unique:true, required:true},
+    email:{type:String,unique:true, required:true},
     password:{type:String,required:true},
     bio:String,
     image:String,
